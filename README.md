@@ -37,6 +37,6 @@ The models have already been placed in their respective folders.
 3) the json output from videopose will be located in the jsonoutput folder (folder created automatically)  
 4) the biological motion text file will be located in the txtbiomotion folder (folder created automatically) 
 
-# How to view Biological Motion txt files:
+## How to view Biological Motion txt files:
 `python3 ViewBiologicalMotion/bmread.py filename.txt`  
 If you wish to change the viewing dimensions or fps, edit the bmread.py file in the ViewBiologicalMotion folder.

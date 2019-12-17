@@ -42,22 +42,22 @@ The models have already been placed in their respective folders.
 If you wish to change the viewing dimensions or fps, edit the bmread.py file in the ViewBiologicalMotion folder.
 
 ## References:
-@inproceedings{pavllo:videopose3d:2019,
-  title={3D human pose estimation in video with temporal convolutions and semi-supervised training},
-  author={Pavllo, Dario and Feichtenhofer, Christoph and Grangier, David and Auli, Michael},
-  booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2019}
-}    
-ht&#8203;https://github.com/zh-plus/video-to-pose3D
-@inproceedings{fang2017rmpe,
-  title={{RMPE}: Regional Multi-person Pose Estimation},
-  author={Fang, Hao-Shu and Xie, Shuqin and Tai, Yu-Wing and Lu, Cewu},
-  booktitle={ICCV},
-  year={2017}
-}    
-@inproceedings{xiu2018poseflow,
-  title = {{Pose Flow}: Efficient Online Pose Tracking},
-  author = {Xiu, Yuliang and Li, Jiefeng and Wang, Haoyu and Fang, Yinghong and Lu, Cewu},
-  booktitle={BMVC},
-  year = {2018}
-}    
+@inproceedings{pavllo:videopose3d:2019,     
+  title={3D human pose estimation in video with temporal convolutions and semi-supervised training},     
+  author={Pavllo, Dario and Feichtenhofer, Christoph and Grangier, David and Auli, Michael},      
+  booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)},      
+  year={2019}      
+}          
+ht&#8203https://github.com/zh-plus/video-to-pose3D      
+@inproceedings{fang2017rmpe,      
+  title={{RMPE}: Regional Multi-person Pose Estimation},      
+  author={Fang, Hao-Shu and Xie, Shuqin and Tai, Yu-Wing and Lu, Cewu},      
+  booktitle={ICCV},      
+  year={2017}      
+}          
+@inproceedings{xiu2018poseflow,      
+  title = {{Pose Flow}: Efficient Online Pose Tracking},      
+  author = {Xiu, Yuliang and Li, Jiefeng and Wang, Haoyu and Fang, Yinghong and Lu, Cewu},      
+  booktitle={BMVC},      
+  year = {2018}      
+}          

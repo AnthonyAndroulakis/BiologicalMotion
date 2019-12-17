@@ -13,10 +13,10 @@ generate and view biological motion txt files from mp4 video files
    - Linux system
    - Python > 3.6 distribution
 2. Dependencies
-   - **Packages**
-      - Pytorch > 1.0.0
+   - ffmpeg
+   - **Modules**
+      - [Pytorch (CUDA ≥ 9.2)](https://pytorch.org/)
       - [torchsample](https://github.com/MVIG-SJTU/AlphaPose/issues/71#issuecomment-398616495)
-      - [ffmpeg](https://ffmpeg.org/download.html)
       - tqdm
       - torchvision
       - tkinter

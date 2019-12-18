@@ -1,7 +1,7 @@
 # Biological Motion Files Generator and Viewer
 generate and view biological motion txt files from mp4 video files 
 > Implements 3D human single-pose estimation. 
-> credits go to the following repositories:
+> credits go to the following repositories (scroll to the bottom for references):
 > - https://github.com/facebookresearch/VideoPose3D
 > - https://github.com/zh-plus/video-to-pose3D
 > - https://github.com/MVIG-SJTU/AlphaPose  

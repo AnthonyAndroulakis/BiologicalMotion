@@ -2,7 +2,8 @@
 -- generate and view biological motion txt files from mp4 video files  
 Example (gif files below created manually) (**lag due to** slightly different fps between the gif files and slightly different starting times) (check sample outputs here: https://github.com/AnthonyAndroulakis/BiologicalMotion/tree/master/sampletests):     
 <img src="https://github.com/AnthonyAndroulakis/BiologicalMotion/blob/master/sampletests/sample.gif" width="400" height="790">
-<img src="https://github.com/AnthonyAndroulakis/BiologicalMotion/blob/master/sampletests/sampleoutputexample.gif" width="400" height="790">     
+<img src="https://github.com/AnthonyAndroulakis/BiologicalMotion/blob/master/sampletests/sampleoutputexample.gif" width="400" height="790">  
+The gifs above and the data in https://github.com/AnthonyAndroulakis/BiologicalMotion/tree/master/sampletests are of myself. Do not use these for your own purposes without written permission from me.    
 > Implements 3D human single-pose estimation. 
 > credits go to the following repositories (scroll to the bottom for references):
 > - https://github.com/facebookresearch/VideoPose3D

@@ -72,7 +72,6 @@ x (nth joint, nth frame)
 y (nth joint, nth frame)
 ```
 
-
 ## References to code implemented in this project:
 @inproceedings{pavllo:videopose3d:2019,     
 &nbsp;&nbsp;&nbsp;&nbsp;title={3D human pose estimation in video with temporal convolutions and semi-supervised training},     

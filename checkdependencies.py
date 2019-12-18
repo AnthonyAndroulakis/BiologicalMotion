@@ -1,6 +1,14 @@
+#this file can be run with any python3 version
 import os
 
 missingRequirements = []
+#check CUDA existence and version
+if os.path.isfile('/usr/local/cuda/version.txt') == False:
+    print('CUDA is missing. Please install CUDA (version ≥ 9.2)')
+    missingRequirements.append('CUDA')
+elif float('.'.join(os.popen('cat /usr/local/cuda/version.txt').read()[:-1].split(' ')[2].split('.')[:2]))>=9.2 == False:
+    print('CUDA version is too low. Please install CUDA (version ≥ 9.2)')
+    missingRequirements.append('cudaVersionTooLow')
 #check python3 existence and version
 if 'not found' not in os.popen('type python3').read()[:-1]: #if python3 exists
     if int(''.join(os.popen('python3 --version').read()[:-1].split(' ')[1].split('.')[:2]))<=36: #if python3 version < = 3.6

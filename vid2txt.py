@@ -41,7 +41,7 @@ def json2txt(videofile):
     allframeslist = [z/(max(allframeslist)-min(allframeslist)) for z in allframeslist] #normalize data to make it between 0 and 1
     allframeslist = [round(700*q) for q in allframeslist] #put in range of 700, change this maybe idk, rounded instead of casted to int
 
-    duration = os.popen('mediainfo --Inform="Video;%Duration%" outputs/'+videofile).read()
+    duration = os.popen('mediainfo --Inform="Video;%Duration%" outputs/'+videofile).read()[:-1]
     allframeslist.insert(0, duration) #insert duration at beginning
     allframeslist.insert(0, n) #insert numberFrames before duration
     allframeslist.insert(0, numpoints) #insert dotNumber before numberFrames

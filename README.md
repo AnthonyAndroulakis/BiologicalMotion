@@ -1,5 +1,5 @@
 # Biological Motion Files Generator and Viewer
-generate and view biological motion txt files from mp4 video files  
+-- generate and view biological motion txt files from mp4 video files  
 Example (gif files below created manually) (**lag due to** slightly different fps between the gif files and slightly different starting times) (check sample outputs here: https://github.com/AnthonyAndroulakis/BiologicalMotion/tree/master/sampletests):     
 <img src="https://github.com/AnthonyAndroulakis/BiologicalMotion/blob/master/sampletests/sample.gif" width="400" height="790">
 <img src="https://github.com/AnthonyAndroulakis/BiologicalMotion/blob/master/sampletests/sampleoutputexample.gif" width="400" height="790">     

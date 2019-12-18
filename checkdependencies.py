@@ -124,6 +124,6 @@ if os.path.isfile('./joints_detectors/Alphapose/models/yolo/yolov3-spp.weights')
 
 #print missing requirements
 if len(missingRequirements)>0:
-    print("Please install the following missing requirements: "+", ".join(missingRequirements))
+    print("\nPlease install the following missing requirements: "+", ".join(missingRequirements))
 else:
-    print("All requirements met.")
+    print("\nAll requirements met.")

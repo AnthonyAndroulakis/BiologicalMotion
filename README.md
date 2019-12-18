@@ -45,6 +45,34 @@ The models have already been placed in their respective folders.
 `python3 ViewBiologicalMotion/bmread.py txtbiomotion/filename.txt `         
 If you wish to change the viewing dimensions or fps, edit the bmread.py file in the ViewBiologicalMotion folder.
 
+## Format of Biological Motion txt files:
+```
+dotsPerFrame
+numberOfFrames
+duration
+x (1st joint, 1st frame)
+y (1st joint, 1st frame)
+x (2nd joint, 1st frame)
+y (2nd joint, 1st frame)
+x (3rd joint, 1st frame)
+y (3rd joint, 1st frame)
+.
+.
+.
+x (nth joint, 1st frame)
+y (nth joint, 1st frame)
+x (1st joint, 2nd frame)
+y (1st joint, 2nd frame)
+x (2nd joint, 2nd frame)
+y (2nd joint, 2nd frame)
+.
+.
+.
+x (nth joint, nth frame)
+y (nth joint, nth frame)
+```
+
+
 ## References to code implemented in this project:
 @inproceedings{pavllo:videopose3d:2019,     
 &nbsp;&nbsp;&nbsp;&nbsp;title={3D human pose estimation in video with temporal convolutions and semi-supervised training},     

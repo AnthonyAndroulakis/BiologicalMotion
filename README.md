@@ -38,7 +38,8 @@ The models have already been placed in their respective folders.
 4) the biological motion text file will be located in the txtbiomotion folder (folder created automatically) 
 
 ## How to view Biological Motion txt files:
-`python3 ViewBiologicalMotion/bmread.py filename.txt`  
+`python3 ViewBiologicalMotion/bmread.py filename.txt 4300`  
+here filename.txt is your Biological Motion txt file and 4300 is the duration of filename.mp4 in milliseconds.       
 If you wish to change the viewing dimensions or fps, edit the bmread.py file in the ViewBiologicalMotion folder.
 
 ## References to code implemented in this project:

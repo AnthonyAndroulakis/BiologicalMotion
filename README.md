@@ -48,7 +48,7 @@ The models have already been placed in their respective folders.
 `python3 ViewBiologicalMotion/bmread.py txtbiomotion/filename.txt `         
 If you wish to change the viewing dimensions or fps, edit the bmread.py file in the ViewBiologicalMotion folder.
 
-## Format of Biological Motion txt files (improved format: duration on 3rd line for accurate fps when viewing):
+## Format of Biological Motion txt files (improved format: duration (ms) on 3rd line for accurate fps when viewing):
 ```
 dotsPerFrame
 numberOfFrames

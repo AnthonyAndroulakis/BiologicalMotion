@@ -41,7 +41,7 @@ The models have already been placed in their respective folders.
 `python3 ViewBiologicalMotion/bmread.py filename.txt`  
 If you wish to change the viewing dimensions or fps, edit the bmread.py file in the ViewBiologicalMotion folder.
 
-## References to code used in this project:
+## References to code implemented in this project:
 @inproceedings{pavllo:videopose3d:2019,     
 &nbsp;&nbsp;&nbsp;&nbsp;title={3D human pose estimation in video with temporal convolutions and semi-supervised training},     
 &nbsp;&nbsp;&nbsp;&nbsp;author={Pavllo, Dario and Feichtenhofer, Christoph and Grangier, David and Auli, Michael},      

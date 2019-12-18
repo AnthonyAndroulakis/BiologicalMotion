@@ -15,7 +15,7 @@ if 'not found' not in os.popen('type python3').read()[:-1]: #if python3 exists
     if int(''.join(os.popen('python3 --version').read()[:-1].split(' ')[1].split('.')[:2]))<=36: #if python3 version < = 3.6
         print("python3 version is less than or equal to 3.6. Due to multiple methods of installation existing for different computers, you must install python3 version≥3.6 yourself.")
         missingRequirements.append('pyVersionTooLow')
-    if 'not found' os.popen('type pip3').read()[:-1]: #if pip3 does not exist
+    if 'not found' in os.popen('type pip3').read()[:-1]: #if pip3 does not exist
         print("pip3 is missing. Due to multiple methods of installation existing for different computers, you must do this yourself.")
         missingRequirements.append('pip3')
     if int(''.join(os.popen('python3 --version').read()[:-1].split(' ')[1].split('.')[:2]))>36: #if python3 version > 3.6:

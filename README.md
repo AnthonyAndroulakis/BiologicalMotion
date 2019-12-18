@@ -43,24 +43,24 @@ If you wish to change the viewing dimensions or fps, edit the bmread.py file in 
 
 ## References:
 @inproceedings{pavllo:videopose3d:2019,     
-&nbsp;&nbsp;title={3D human pose estimation in video with temporal convolutions and semi-supervised training},     
-&nbsp;&nbsp;author={Pavllo, Dario and Feichtenhofer, Christoph and Grangier, David and Auli, Michael},      
-&nbsp;&nbsp;booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)},      
-&nbsp;&nbsp;year={2019}      
+&nbsp;&nbsp;&nbsp;&nbsp;title={3D human pose estimation in video with temporal convolutions and semi-supervised training},     
+&nbsp;&nbsp;&nbsp;&nbsp;author={Pavllo, Dario and Feichtenhofer, Christoph and Grangier, David and Auli, Michael},      
+&nbsp;&nbsp;&nbsp;&nbsp;booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)},      
+&nbsp;&nbsp;&nbsp;&nbsp;year={2019}      
 }     
     
 https://<i></i>github.com/zh-plus/video-to-pose3D      
     
 @inproceedings{fang2017rmpe,      
-&nbsp;&nbsp;title={{RMPE}: Regional Multi-person Pose Estimation},      
-&nbsp;&nbsp;author={Fang, Hao-Shu and Xie, Shuqin and Tai, Yu-Wing and Lu, Cewu},      
-&nbsp;&nbsp;booktitle={ICCV},      
-&nbsp;&nbsp;year={2017}      
+&nbsp;&nbsp;&nbsp;&nbsp;title={{RMPE}: Regional Multi-person Pose Estimation},      
+&nbsp;&nbsp;&nbsp;&nbsp;author={Fang, Hao-Shu and Xie, Shuqin and Tai, Yu-Wing and Lu, Cewu},      
+&nbsp;&nbsp;&nbsp;&nbsp;booktitle={ICCV},      
+&nbsp;&nbsp;&nbsp;&nbsp;year={2017}      
 }          
     
 @inproceedings{xiu2018poseflow,      
-&nbsp;&nbsp;title = {{Pose Flow}: Efficient Online Pose Tracking},      
-&nbsp;&nbsp;author = {Xiu, Yuliang and Li, Jiefeng and Wang, Haoyu and Fang, Yinghong and Lu, Cewu},      
-&nbsp;&nbsp;booktitle={BMVC},      
-&nbsp;&nbsp;year = {2018}      
+&nbsp;&nbsp;&nbsp;&nbsp;title = {{Pose Flow}: Efficient Online Pose Tracking},      
+&nbsp;&nbsp;&nbsp;&nbsp;author = {Xiu, Yuliang and Li, Jiefeng and Wang, Haoyu and Fang, Yinghong and Lu, Cewu},      
+&nbsp;&nbsp;&nbsp;&nbsp;booktitle={BMVC},      
+&nbsp;&nbsp;&nbsp;&nbsp;year = {2018}      
 }          

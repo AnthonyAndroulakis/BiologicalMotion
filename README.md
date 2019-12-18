@@ -35,7 +35,7 @@ Example (gif files below created manually) (**lag due to** slightly different fp
       
 The models have already been placed in their respective folders.   
 
-## How to generate Biological Motion txt files (~1 minute for a 4 second long video file):   
+## How to generate Biological Motion txt files (~1 minute converting time for a 30 second long video file):   
 1) place your video in the outputs folder   
 2) `python3 -c "import vid2txt; vid2txt.main('filename.mp4')"` where filename is your video file name   
 3) the json output from videopose will be located in the jsonoutput folder (folder created automatically)  

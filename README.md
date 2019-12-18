@@ -13,6 +13,8 @@ The gifs above and the data in https://github.com/AnthonyAndroulakis/BiologicalM
 > compiled/coded by Anthony Androulakis and Ryan Joseph
 
 ## Requirements:
+On a Linux system, run the following commands to check/install the below requirements (installs everything automatically except python3, pip3, and pytorch):      
+`python3 checkrequirements.py`    
 1. Environment
    - Linux system
    - Python > 3.6 distribution

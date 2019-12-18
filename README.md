@@ -64,3 +64,8 @@ https://<i></i>github.com/zh-plus/video-to-pose3D
 &nbsp;&nbsp;&nbsp;&nbsp;booktitle={BMVC},      
 &nbsp;&nbsp;&nbsp;&nbsp;year = {2018}      
 }          
+
+## Links to Licenses:
+facebookresearch: VideoPose3D: https://github.com/facebookresearch/VideoPose3D/blob/master/LICENSE      
+zh-plus: video-to-pose3D: https://github.com/zh-plus/video-to-pose3D/blob/master/LICENSE      
+MVIG-SJTU: AlphaPose: https://github.com/MVIG-SJTU/AlphaPose/blob/master/LICENSE      

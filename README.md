@@ -49,7 +49,7 @@ If you wish to change the viewing dimensions or fps, edit the bmread.py file in 
   year={2019}      
 }     
     
-‌‌https://github.com/zh-plus/video-to-pose3D      
+https&#58;//github.com/zh-plus/video-to-pose3D      
     
 @inproceedings{fang2017rmpe,      
   title={{RMPE}: Regional Multi-person Pose Estimation},      

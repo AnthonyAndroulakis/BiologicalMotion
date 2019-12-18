@@ -1,8 +1,9 @@
 # Biological Motion Files Generator and Viewer
 generate and view biological motion txt files from mp4 video files  
 Example (slight lag due to GitHub loading 1st gif separately from loading 2nd gif file):     
-<img src="https://github.com/AnthonyAndroulakis/BiologicalMotion/blob/master/sampletests/sample.gif" width="400" height="790">
-<img src="https://github.com/AnthonyAndroulakis/BiologicalMotion/blob/master/sampletests/sampleoutputexample.gif" width="400" height="790">
+Input video (converted to gif): <img src="https://github.com/AnthonyAndroulakis/BiologicalMotion/blob/master/sampletests/sample.gif" width="400" height="790">       
+Output tkinker window (converted to gif):
+<img src="https://github.com/AnthonyAndroulakis/BiologicalMotion/blob/master/sampletests/sampleoutputexample.gif" width="400" height="790">     
 > Implements 3D human single-pose estimation. 
 > credits go to the following repositories (scroll to the bottom for references):
 > - https://github.com/facebookresearch/VideoPose3D

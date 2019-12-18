@@ -1,6 +1,7 @@
 #this file can be run with any python3 version
 import os
 
+os.system('mkdir -p outputs') #create outputs folder if it does not already exist
 missingRequirements = []
 #check CUDA existence and version
 if os.path.isfile('/usr/local/cuda/version.txt') == False:

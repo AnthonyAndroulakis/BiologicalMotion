@@ -100,19 +100,19 @@ else:
 #check package existence
 if 'not found' in os.popen('type ffmpeg').read()[:-1]:
     installFfmpeg = input('ffmpeg is needed for this program but is not found on your computer, install it? (y/n) ').lower()
-        if installFfmpeg == 'y':
-            os.system('sudo apt-get install ffmpeg')
-        else:
-            ('ffmpeg is missing and needs to be installed')
-            missingRequirements.append('ffmpeg')
+    if installFfmpeg == 'y':
+        os.system('sudo apt-get install ffmpeg')
+    else:
+        ('ffmpeg is missing and needs to be installed')
+        missingRequirements.append('ffmpeg')
 
 if 'not found' in os.popen('type mediainfo').read()[:-1]:
     installMediainfo = input('mediainfo is needed for this program but is not found on your computer, install it? (y/n) ').lower()
-        if installMediainfo == 'y':
-            os.system('sudo apt install mediainfo')
-        else:
-            ('mediainfo is missing and needs to be installed')
-            missingRequirements.append('mediainfo')
+    if installMediainfo == 'y':
+        os.system('sudo apt install mediainfo')
+    else:
+        ('mediainfo is missing and needs to be installed')
+        missingRequirements.append('mediainfo')
 
 #get neural network models:
 if os.path.isfile('./joints_detectors/Alphapose/models/sppe/duc_se.pth') == False:

@@ -14,6 +14,7 @@ generate and view biological motion txt files from mp4 video files
    - Python > 3.6 distribution
 2. Dependencies
    - ffmpeg
+   - mediainfo
    - Python Modules:
       - [Pytorch (CUDA ≥ 9.2)](https://pytorch.org/)
       - [torchsample](https://github.com/MVIG-SJTU/AlphaPose/issues/71#issuecomment-398616495)
@@ -70,3 +71,4 @@ https://<i></i>github.com/zh-plus/video-to-pose3D
 facebookresearch: VideoPose3D: https://github.com/facebookresearch/VideoPose3D/blob/master/LICENSE      
 zh-plus: video-to-pose3D: https://github.com/zh-plus/video-to-pose3D/blob/master/LICENSE      
 MVIG-SJTU: AlphaPose: https://github.com/MVIG-SJTU/AlphaPose/blob/master/LICENSE      
+

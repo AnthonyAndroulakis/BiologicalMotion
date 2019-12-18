@@ -1,3 +1,6 @@
+#view Biological Motion txt files
+#bmread.py
+
 import os
 import sys
 from tkinter import *
@@ -16,8 +19,8 @@ def create_circle(canvas, x, y, r):
     return canvas.create_oval(x0, y0, x1, y1, fill="white")
 
 def frameshow(data):
-    xlist=data[2:][::2] #every other plus first
-    ylist=data[2:][1::2] #every other (without first)
+    xlist=data[3:][::2] #every other plus first
+    ylist=data[3:][1::2] #every other (without first)
     window.geometry(str(int(max(ylist)-min(ylist)+1000))+'x'+str(int(max(xlist)-min(xlist)+1000)))
     canvas = Canvas(window, bg = "black", height = int(max(ylist)-min(ylist)+800), width = int(max(xlist)-min(xlist)+800))
     canvas.pack()
@@ -28,9 +31,7 @@ def frameshow(data):
     dotCount = 0;
     dotsPerFrame = data[0]
     numberFrames = data[1]
-
-    xlist=data[2:][::2] #every other plus first
-    ylist=data[2:][1::2] #every other (without first)
+    duration = data[2]
 
     for j in range(len(xlist)):
         x = xlist[j]
@@ -45,9 +46,9 @@ def frameshow(data):
             key = WaitForTime(round(duration/numberFrames)) #sets fps
             canvas.delete("all")
 
-def display(txtfile,duration): #duration in ms
-    unfiltered = list(filter(None, open(txtfile,"r").read().split('\n'))) #./BioMotion3/PointLight_Data/StreamingAssets/data_text_files/
+def display(txtfile):
+    unfiltered = list(filter(None, open(txtfile,"r").read().split('\n')))
     data = list(map(int, unfiltered))
-    frameshow(data,duration) #duration is needed for fps, duration in ms
+    frameshow(data)
 
 display(sys.argv[1])

@@ -11,11 +11,12 @@ def getpredictions(videofile):
     videopose.makepredictions(videofile)
     videofilename = videofile[:-4]
     cmddel1 = 'rm outputs/alpha_pose_'+videofilename+'.mp4'
-    cmddel2 = 'rm outputs/alpha_pose_'+videofilename+'/'+videofilename+'.npz'
+    cmddel2 = 'rm -f outputs/alpha_pose_'+videofilename+'/'+videofilename+'.npz'
     cmddel3 = 'rm -rf outputs/alpha_pose_'+videofilename+'/vis'
-    cmddel4 = 'rm outputs/'+videofilename+'_3d_output.npy'
+    cmddel4 = 'rm -f outputs/'+videofilename+'_3d_output.npy'
     cmdrename1 = 'mv outputs/alpha_pose_'+videofilename+'/alphapose-results.json jsonoutput/'+videofilename+'.json'
     cmddel5 = 'rm -rf outputs/alpha_pose_'+videofilename
+    cmddel6 = 'rm -f outputs/test_3d_output.npy'
     #the order of deletion/renaming below matters
     os.system(cmddel1)
     os.system(cmddel2)
@@ -23,6 +24,7 @@ def getpredictions(videofile):
     os.system(cmddel4)
     os.system(cmdrename1)
     os.system(cmddel5)
+    os.system(cmddel6)
 
 def json2txt(videofile):
     videofilename = videofile[:-4]
@@ -39,8 +41,10 @@ def json2txt(videofile):
     allframeslist = [z/(max(allframeslist)-min(allframeslist)) for z in allframeslist] #normalize data to make it between 0 and 1
     allframeslist = [round(700*q) for q in allframeslist] #put in range of 700, change this maybe idk, rounded instead of casted to int
 
-    allframeslist.insert(0, n)
-    allframeslist.insert(0, numpoints)
+    duration = os.popen('mediainfo --Inform="Video;%Duration%" outputs/'+videofile).read()
+    allframeslist.insert(0, duration) #insert duration at beginning
+    allframeslist.insert(0, n) #insert numberFrames before duration
+    allframeslist.insert(0, numpoints) #insert dotNumber before numberFrames
 
     allframeslist = [str(e) for e in allframeslist]
 

@@ -19,8 +19,18 @@ def create_circle(canvas, x, y, r):
     return canvas.create_oval(x0, y0, x1, y1, fill="white")
 
 def frameshow(data):
-    xlist=data[3:][::2] #every other plus first
-    ylist=data[3:][1::2] #every other (without first)
+    if len(data)%2 == 1: #if odd, then duration is included, then do the following
+        xlist=data[3:][::2] #every other plus first
+        ylist=data[3:][1::2] #every other (without first)
+        numberFrames = data[1]
+        duration = data[2]
+        spf = round(duration/numberFrames) #seconds per frame
+    else: #if duration is not included
+        xlist=data[2:][::2] #every other plus first
+        ylist=data[2:][1::2] #every other (without first)
+        numberFrames = data[1]
+        #duration = data[2] #unknown for this case
+        spf = 30 #30 ms
     window.geometry(str(int(max(ylist)-min(ylist)+1000))+'x'+str(int(max(xlist)-min(xlist)+1000)))
     canvas = Canvas(window, bg = "black", height = int(max(ylist)-min(ylist)+800), width = int(max(xlist)-min(xlist)+800))
     canvas.pack()
@@ -30,8 +40,6 @@ def frameshow(data):
     frameIndex = 1;
     dotCount = 0;
     dotsPerFrame = data[0]
-    numberFrames = data[1]
-    duration = data[2]
 
     for j in range(len(xlist)):
         x = xlist[j]
@@ -43,7 +51,7 @@ def frameshow(data):
         if dotCount > dotsPerFrame-1:
             frameIndex = frameIndex + 1
             dotCount = 0
-            key = WaitForTime(round(duration/numberFrames)) #sets fps
+            key = WaitForTime(spf) #sets fps
             canvas.delete("all")
 
 def display(txtfile):

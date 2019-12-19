@@ -26,7 +26,7 @@ or `cd BiologicalMotion-master` (if you downloaded the ZIP)
 `python3 ViewBiologicalMotion/bmread.py txtbiomotion/filename.txt` where filename is your biological motion txt file
 
 ## Requirements:
-On a Linux system, run the following command to check/install the below dependencies (installs everything automatically except CUDA, python3, pip3, and pytorch):      
+Shortcut: On a Linux system, run the following command to check/install the below dependencies (installs everything automatically except CUDA, python3, pip3, and pytorch):      
 `python3 checkdependencies.py`    
 1. Environment
    - Linux system

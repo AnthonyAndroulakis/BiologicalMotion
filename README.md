@@ -20,7 +20,7 @@ or press the "Clone or Download" button, click "Download ZIP" in the dropdown me
 or `cd BiologicalMotion-master` (if you downloaded the ZIP)
 3) To Check and Install Dependencies: `python3 checkdependencies.py` #if *All requirements met.* is **NOT** printed, then manually install the needed requirements (will be printed)
 4) place a video with 1 person moving about in the outputs folder
-5) To Generate Biological Motion txt Files: `python3 -c "import vid2txt; vid2txt.main('filename.mp4')"` where filename is your video file name
+5) To Generate Biological Motion txt Files: `python3 -c "import vid2txt; vid2txt.main('filename.mp4 --no-duration')"` where filename is your video file name (if you'd like to add in duration info, simply run `python3 -c "import vid2txt; vid2txt.main('filename.mp4')"`
 6) get generated biological motion txt file from the txtbiomotion folder
 7) To View Biological Motion txt File:     
 `python3 ViewBiologicalMotion/bmread.py txtbiomotion/filename.txt` where filename is your biological motion txt file

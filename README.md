@@ -84,7 +84,7 @@ y (nth joint, nth frame)
 ```
 
 ## Joint Numbers:
-<img src="https://github.com/AnthonyAndroulakis/BiologicalMotion/blob/master/sampletests/jointnumbers.png" width="172" height="394">
+<img src="https://github.com/AnthonyAndroulakis/BiologicalMotion/blob/master/sampletests/numberedjoints.png" width="172" height="394">
 
 ## References to code implemented in this project:
 @inproceedings{pavllo:videopose3d:2019,     

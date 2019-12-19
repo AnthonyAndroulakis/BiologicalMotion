@@ -44,9 +44,9 @@ On a Linux system, run the following command to check/install the below dependen
       - opencv-python
       - matplotlib
    - Alphapose
-       - Download **duc_se.pth** from ([Dropbox](https://www.dropbox.com/s/4khz6uub9x5sgdt/duc_se.pth),
+       - Download **duc_se.pth** from [Dropbox](https://www.dropbox.com/s/4khz6uub9x5sgdt/duc_se.pth),
          and place it in `./joints_detectors/Alphapose/models/sppe`
-       - Download **yolov3-spp.weights** from ([Dropbox](https://www.dropbox.com/s/slpy8xczqw6g29p/yolov3-spp.weights),
+       - Download **yolov3-spp.weights** from [Dropbox](https://www.dropbox.com/s/slpy8xczqw6g29p/yolov3-spp.weights),
          and place it in `./joints_detectors/Alphapose/models/yolo`
       
 Facebook's [pretrained_h36m_cpn.bin model](https://dl.fbaipublicfiles.com/video-pose-3d/pretrained_h36m_detectron_coco.bin) has already been placed in the `./checkpoint` folder.   

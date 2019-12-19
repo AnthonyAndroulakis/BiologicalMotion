@@ -13,7 +13,7 @@ The gifs above and the data in https://github.com/AnthonyAndroulakis/BiologicalM
 > compiled/coded by Anthony Androulakis and Ryan Joseph
 
 ## Quickstart:
-1) To Download this Xode: either use the command `git clone https://github.com/AnthonyAndroulakis/BiologicalMotion.git` or press the "Clone or Download" button and click "Download ZIP" in the dropdown menu
+1) To Download this Code: either use the command `git clone https://github.com/AnthonyAndroulakis/BiologicalMotion.git` or press the "Clone or Download" button and click "Download ZIP" in the dropdown menu
 2) To Check and Install Dependencies: `python3 checkdependencies.py` #if *All requirements met.* is **NOT** printed, then manually install the needed requirements (will be printed)
 3) place a video with 1 person moving about in the outputs folder
 4) To Generate Biological Motion txt Files: `python3 -c "import vid2txt; vid2txt.main('filename.mp4')"` where filename is your video file name

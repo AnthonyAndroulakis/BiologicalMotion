@@ -27,7 +27,7 @@ if 'not found' not in os.popen('type python3').read()[:-1]: #if python3 exists
             print('pytorch module not found. Please install your cuda-specific version from here: https://pytorch.org/')
             missingRequirements.append('moduleTorch')
         #torchsample
-        if 'torchsample' not in os.popen('pip3 freeze').read()
+        if 'torchsample' not in os.popen('pip3 freeze').read():
             os.system('pip3 install -e git+https://github.com/ncullen93/torchsample.git#egg=torchsample')
         #tqdm
         try:

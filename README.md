@@ -83,6 +83,9 @@ x (nth joint, nth frame)
 y (nth joint, nth frame)
 ```
 
+## Joint Numbers:
+<img src="https://github.com/AnthonyAndroulakis/BiologicalMotion/blob/master/sampletests/jointnumbers.png" width="172" height="394">
+
 ## References to code implemented in this project:
 @inproceedings{pavllo:videopose3d:2019,     
 &nbsp;&nbsp;&nbsp;&nbsp;title={3D human pose estimation in video with temporal convolutions and semi-supervised training},     

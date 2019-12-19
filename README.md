@@ -17,7 +17,8 @@ The gifs above and the data in https://github.com/AnthonyAndroulakis/BiologicalM
 2) place a video with 1 person moving about in the outputs folder
 3) `python3 -c "import vid2txt; vid2txt.main('filename.mp4')"` where filename is your video file name
 4) get biological motion txt file from the txtbiomotion folder
-5) if you want to view the biological motion txt file: `python3 ViewBiologicalMotion/bmread.py txtbiomotion/filename.txt` where filename is your biological motion txt file
+5) if you want to view the biological motion txt file: 
+`python3 ViewBiologicalMotion/bmread.py txtbiomotion/filename.txt` where filename is your biological motion txt file
 
 ## Requirements:
 On a Linux system, run the following command to check/install the below dependencies (installs everything automatically except CUDA, python3, pip3, and pytorch):      

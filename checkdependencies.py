@@ -18,7 +18,7 @@ if 'not found' not in os.popen('type python3').read()[:-1]: #if python3 exists
     if 'not found' in os.popen('type pip3').read()[:-1]: #if pip3 does not exist
         print("pip3 is missing. Due to multiple methods of installation existing for different computers, you must do this yourself.")
         missingRequirements.append('pip3')
-    if int(''.join(os.popen('python3 --version').read()[:-1].split(' ')[1].split('.')[:2]))>36: #if python3 version > 3.6:
+    if int(''.join(os.popen('python3 --version').read()[:-1].split(' ')[1].split('.')[:2]))>36 and 'not found' not in os.popen('type pip3').read()[:-1]: #if python3 version > 3.6 and pip3 exists:
         #check python module existence
         #pytorch
         try:
@@ -27,7 +27,8 @@ if 'not found' not in os.popen('type python3').read()[:-1]: #if python3 exists
             print('pytorch module not found. Please install your cuda-specific version from here: https://pytorch.org/')
             missingRequirements.append('moduleTorch')
         #torchsample
-        os.system('pip3 install -e git+https://github.com/ncullen93/torchsample.git#egg=torchsample')
+        if 'torchsample' not in os.popen('pip3 freeze').read()
+            os.system('pip3 install -e git+https://github.com/ncullen93/torchsample.git#egg=torchsample')
         #tqdm
         try:
             import tqdm

@@ -12,7 +12,7 @@ The gifs above and the data in https://github.com/AnthonyAndroulakis/BiologicalM
 
 > compiled/coded by Anthony Androulakis and Ryan Joseph
 
-## Quickstart:
+## Quickstart (short-and-sweet):
 1) To Download this Code: either use the command   
 `git clone https://github.com/AnthonyAndroulakis/BiologicalMotion.git`   
 or press the "Clone or Download" button, click "Download ZIP" in the dropdown menu, and extract the ZIP file

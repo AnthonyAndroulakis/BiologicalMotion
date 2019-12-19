@@ -13,11 +13,11 @@ The gifs above and the data in https://github.com/AnthonyAndroulakis/BiologicalM
 > compiled/coded by Anthony Androulakis and Ryan Joseph
 
 ## Quickstart:
-1) Check and Install Dependencies: `python3 checkdependencies.py` #if All requirements met. is **NOT** printed, then manually install the needed requirements (will be printed)
+1) To Check and Install Dependencies: `python3 checkdependencies.py` #if All requirements met. is **NOT** printed, then manually install the needed requirements (will be printed)
 2) place a video with 1 person moving about in the outputs folder
-3) Generate Biological Motion txt Files: `python3 -c "import vid2txt; vid2txt.main('filename.mp4')"` where filename is your video file name
+3) To Generate Biological Motion txt Files: `python3 -c "import vid2txt; vid2txt.main('filename.mp4')"` where filename is your video file name
 4) get generated biological motion txt file from the txtbiomotion folder
-5) View Biological Motion txt File:     
+5) To View Biological Motion txt File:     
 `python3 ViewBiologicalMotion/bmread.py txtbiomotion/filename.txt` where filename is your biological motion txt file
 
 ## Requirements:

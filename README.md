@@ -71,7 +71,7 @@ If you wish to change the viewing dimensions or fps, edit the bmread.py file in 
 ```
 dotsPerFrame
 numberOfFrames
-duration
+duration (optional)
 x (1st joint, 1st frame)
 y (1st joint, 1st frame)
 x (2nd joint, 1st frame)

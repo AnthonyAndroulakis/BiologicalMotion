@@ -93,7 +93,7 @@ x (nth joint, nth frame)
 y (nth joint, nth frame)
 ```
 
-## Joint Numbers:
+## Joint Numbers (facing into the screen):
 <img src="https://github.com/AnthonyAndroulakis/BiologicalMotion/blob/master/sampletests/numberedjoints.png" width="172" height="394">
 
 ## References to code implemented in this project:

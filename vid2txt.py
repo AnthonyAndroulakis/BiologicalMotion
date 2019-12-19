@@ -26,7 +26,7 @@ def getpredictions(videofile):
     os.system(cmddel5)
     os.system(cmddel6)
 
-def json2txt(videofile):
+def json2txt(videofile, getduration):
     videofilename = videofile[:-4]
     poseread=json.load(open('jsonoutput/'+videofilename+'.json'))
     #frameOne = [i for j, i in enumerate(poseread[0]['keypoints']) if (j+1)%3] #first frame, x,y
@@ -40,9 +40,10 @@ def json2txt(videofile):
 
     allframeslist = [z/(max(allframeslist)-min(allframeslist)) for z in allframeslist] #normalize data to make it between 0 and 1
     allframeslist = [round(700*q) for q in allframeslist] #put in range of 700, change this maybe idk, rounded instead of casted to int
-
-    duration = os.popen('mediainfo --Inform="Video;%Duration%" outputs/'+videofile).read()[:-1]
-    allframeslist.insert(0, duration) #insert duration at beginning
+    
+    if getduration == True:
+        duration = os.popen('mediainfo --Inform="Video;%Duration%" outputs/'+videofile).read()[:-1]
+        allframeslist.insert(0, duration) #insert duration at beginning   
     allframeslist.insert(0, n) #insert numberFrames before duration
     allframeslist.insert(0, numpoints) #insert dotNumber before numberFrames
 
@@ -53,10 +54,14 @@ def json2txt(videofile):
     open('txtbiomotion/'+videofilename+'.txt', "w").write(allframesstring)
 
 def main(videofile):
+    getduration = True
+    if ' --no-duration' in videofile:
+        videofile = videofile.split(' ')[0]
+        getduration = False
     cmdmakefolder1 = 'mkdir -p txtbiomotion'
     cmdmakefolder2 = 'mkdir -p jsonoutput'
     os.system(cmdmakefolder1)
     os.system(cmdmakefolder2)
     getpredictions(videofile)
-    json2txt(videofile)
+    json2txt(videofile, getduration)
     print("Your bio motion txt file for "+videofile+" has been generated.")

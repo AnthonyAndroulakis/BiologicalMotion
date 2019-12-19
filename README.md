@@ -60,8 +60,8 @@ Facebook's [pretrained_h36m_cpn.bin model](https://dl.fbaipublicfiles.com/video-
 ## How to generate Biological Motion txt files (~55 seconds converting time for a 20 second long video file):   
 1) place your video in the outputs folder   
 2) `python3 -c "import vid2txt; vid2txt.main('filename.mp4')"` where filename is your video file name   
-3) the json output from videopose will be located in the jsonoutput folder (folder created automatically)  
-4) the biological motion text file will be located in the txtbiomotion folder (folder created automatically) 
+3) the json output from videopose will be located in the jsonoutput folder **(folder created automatically)**  
+4) the biological motion text file will be located in the txtbiomotion folder **(folder created automatically)** 
 
 ## How to view Biological Motion txt files:
 `python3 ViewBiologicalMotion/bmread.py txtbiomotion/filename.txt`           

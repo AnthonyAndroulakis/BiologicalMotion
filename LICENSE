@@ -1,0 +1,7 @@
+You may use this code under the following conditions:
+1) non-commercial      
+2) please cite this repository (https://github.com/AnthonyAndroulakis/BiologicalMotion)     
+3) cite the following repositories which were used in this code:      
+facebookresearch: VideoPose3D: https://github.com/facebookresearch/VideoPose3D      
+zh-plus: video-to-pose3D: https://github.com/zh-plus/video-to-pose3d      
+MVIG-SJTU: AlphaPose: https://github.com/MVIG-SJTU/AlphaPose       
